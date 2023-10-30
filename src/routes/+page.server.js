@@ -6,7 +6,7 @@ export const actions = {
   },
   register: async ({ request }) => {
     const data = await request.formData();
-    const user = {};
+    let user = {};
 
     data.forEach((value, key) => {
       user[key] = value;
@@ -14,6 +14,7 @@ export const actions = {
     
     console.log(await getAPI(`https://ashures-shop.onrender.com/api/users/`, {
       "method": "POST",
+      "headers": { "Content-Type": "application/json" },
       "body": JSON.stringify(user),
     }));
   }
