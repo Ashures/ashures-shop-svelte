@@ -4,6 +4,8 @@
   const user = data.results;
 </script>
 
+<img src={user.icon} alt="User icon">
+
 <h1>{user.username}</h1>
 
 <ul>
