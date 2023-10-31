@@ -2,6 +2,7 @@
 <h1><a href="/profile/2">Profile 2</a></h1>
 
 <form method="POST" action="?/register">
+  <input name="icon" type="text" placeholder="Icon URL">
   <input name="firstName" type="text" placeholder="First Name">
   <input name="lastName" type="text" placeholder="Last Name">
   <input name="emailAddress" type="email"  placeholder="Email Address">
