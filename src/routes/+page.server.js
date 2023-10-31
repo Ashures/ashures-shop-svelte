@@ -6,7 +6,7 @@ export const actions = {
   },
   register: async ({ request }) => {
     const data = await request.formData();
-    let user = { "registered": true };
+    let user = {};
 
     data.forEach((value, key) => {
       user[key] = value;
