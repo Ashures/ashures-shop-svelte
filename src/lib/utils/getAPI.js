@@ -1,7 +1,9 @@
-const getAPI = async (url, options) => {
+import axios from "axios";
+
+const getAPI = async (url) => {
   try {
-    const res = await fetch(url, options);
-    const data = await res.json();
+    const res = await axios.get(url);
+    const data = await res.data;
 
     if (data.error) return null;
     
