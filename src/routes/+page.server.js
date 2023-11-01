@@ -1,4 +1,6 @@
 import getAPI from "$lib/utils/getAPI.js";
+import sendAPI from '$lib/utils/sendAPI.js'
+import { send } from "vite";
 
 export const actions = {
   login: async (event) => {
@@ -12,10 +14,6 @@ export const actions = {
       user[key] = value;
     });
     
-    console.log(await getAPI(`https://ashures-shop.onrender.com/api/users/`, {
-      "method": "POST",
-      "headers": { "Content-Type": "application/json" },
-      "body": JSON.stringify(user),
-    }));
+    await sendAPI(`https://ashures-shop.onrender.com/api/users/`, user);
   }
 }
