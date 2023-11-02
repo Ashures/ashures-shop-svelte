@@ -21,6 +21,7 @@
 
 <div class="tab-container">
   <div class="tab-list">
+    <div class="tab-bg"></div>
     {#each tabs as tab, i (tab.name)}
       <button class={i === currentTab ? "tab selected-tab" : "tab"} on:click={() => changeTab(i)}>{tab.name}</button>
     {/each}

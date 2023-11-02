@@ -1,3 +1,80 @@
 /* --- Page Setup --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+
 * { box-sizing: border-box; }
 body { margin: 0; }
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #FDFDBD, #C8FFD4, #B8E8FC, #B1AFFF);
+}
+
+/* --- Authentication | Component --- */
+.auth-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#FFF;
+  height: 50vh;
+  width: 75vh;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* --- TabMenu | Component --- */
+.tab-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.tab-container > * {
+  width: 50%;
+  height: 100%;
+}
+
+.tab-list {
+  background: #00b7ff;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  border-radius: 25% 0 0 25%;
+}
+
+.tab-list button { 
+  font: 400 48px "Space Mono", monospace;
+  color: #FFF;
+  text-shadow: 0 0 8px #000;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.tab-list,
+.tab-content,
+.tab-content > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-content > form {
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tab-content > form * { font: 400 16px "Montserrat", sans-serif; }
+
+.tab-content > form h1 {
+  font: 400 36px "Space Mono", monospace;
+  margin: 0;
+}
+
+.selected-tab { display: none; }
