@@ -11,6 +11,6 @@
     {/each}
   </div>
   <div class="tab-content">
-    <svelte:component this={tab[currentTab].component} />
+    <svelte:component this={tabs[currentTab].component} />
   </div>
 </div>
