@@ -3,8 +3,13 @@ import sendAPI from '$lib/utils/sendAPI.js'
 import { send } from "vite";
 
 export const actions = {
-  login: async (event) => {
+  login: async ({ request }) => {
+    const data = await request.formData();
+    let user = {};
 
+    data.forEach((value, key) => {
+      user[key] = value;
+    });
   },
   register: async ({ request }) => {
     const data = await request.formData();
