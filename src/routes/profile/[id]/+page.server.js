@@ -1,4 +1,4 @@
-import getAPI from "$lib/utils/getAPI.js";
+import getAPI from "$lib/utils/api/getAPI.js";
 
 const filterUserData = (userData) => {
   const bannedKeys = ["id", "password", "token", "registered", "createdAt", "updatedAt"];

@@ -1,5 +1,4 @@
-import getAPI from "$lib/utils/getAPI.js";
-import sendAPI from '$lib/utils/sendAPI.js';
+import sendAPI from '$lib/utils/api/sendAPI.js';
 import formDataToJson from '$lib/utils/formDataToJson.js';
 
 export const actions = {
