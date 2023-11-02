@@ -78,3 +78,8 @@ body { margin: 0; }
 }
 
 .selected-tab { display: none; }
+
+/* --- User | Component --- */
+.user-icon {
+  border-radius: 50%;
+}
