@@ -1,5 +1,5 @@
 <script>
-    import Authentication from "$lib/components/Authentication.svelte";
+    import Authentication from "$lib/components/auth/Authentication.svelte";
 </script>
 
 <Authentication />
