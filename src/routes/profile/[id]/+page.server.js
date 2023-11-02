@@ -20,6 +20,8 @@ export async function load({ params }) {
   const BASE_URL = "https://ashures-shop.onrender.com/api";
 
   const data = await getAPI(`${BASE_URL}/users/${pageId}`);
+
+  if (!data) return;
   
   let results = filterUserData(data);
 
