@@ -80,6 +80,12 @@ body { margin: 0; }
 .selected-tab { display: none; }
 
 /* --- User | Component --- */
+.user-container {
+  padding: 100px;
+  border-radius: 50px;
+  background-color: #FCFCFC;
+}
+
 .user-icon {
   border-radius: 50%;
 }
