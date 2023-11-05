@@ -83,9 +83,30 @@ body { margin: 0; }
 .user-container {
   padding: 100px;
   border-radius: 50px;
-  background-color: #FCFCFC;
+  background: linear-gradient(to bottom, #FCFCFC 60%, #00b7ff);
+  box-shadow: 0 0 15px #0004;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font: 400 16px "Montserrat", sans-serif;
+}
+
+.user-info h1 {
+  font: 400 48px "Space Mono", monospace;
+  margin: 0;
+}
+
+.user-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .user-icon {
   border-radius: 50%;
+  box-shadow: 0 0 15px #0008;
 }
