@@ -1,14 +1,9 @@
 <script>
-  export let data;
+  import User from "$lib/components/profile/User.svelte";
 
-  const user = data.results;
+  export let data;
 </script>
 
-<img width="300" src={user.icon} alt="User icon" class="user-icon">
-
-<h1>{user.username}</h1>
-
-<ul>
-  <li>Name: {user.firstName} {user.lastName}</li>
-  <li>Email: {user.emailAddress}</li>
-</ul>
+<div class="main">
+  <User user={data.results} />
+</div>
